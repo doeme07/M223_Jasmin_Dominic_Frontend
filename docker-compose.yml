@@ -3,18 +3,17 @@ version: '3.7'
 services:
   frontend:
     restart: unless-stopped
-    image: uk-fe
-    container_name: frontend
+    build: .
+    image: xmin12/uk-fe
+    container_name: jasmin-frontend
     depends_on:
       - backend
     ports:
-      - 3000:80
+      - 8916:80
   backend:
     restart: unless-stopped
-    image: uk-be
-    container_name: backend
-    ports:
-      - 8080:8080
+    image: xmin12/uk-be
+    container_name: jasmin-backend
     environment:
       -  jdbc:postgresql://db:5432/postgres
     depends_on:
@@ -22,9 +21,7 @@ services:
   db:
     restart: unless-stopped
     image: 'postgres:10-alpine'
-    container_name: db
-    ports:
-      - '5432:5432'
+    container_name: jasmin-db
     environment:
       POSTGRES_PASSWORD: 'postgres'
       POSTGRES_USER: 'postgres'

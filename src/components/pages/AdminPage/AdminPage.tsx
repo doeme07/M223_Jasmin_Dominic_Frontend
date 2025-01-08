@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
-import { Box, Typography } from '@mui/material';
 import ActiveUserContext from '../../../Contexts/ActiveUserContext';
 import Navbar from "../../../Router/Navbar";
 import UserTable from "../UserPage/UserTable";
+import {Typography} from "@mui/material";
+import {useContext} from "react";
+import {Box} from "@mui/system";
 import { User } from "../../../types/models/User.model";
 import logo from "../../../logo1.png";
-import UserPage from "../UserPage/UserPage";
+
 
 
 // Define the AdminPage component

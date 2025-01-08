@@ -1,7 +1,7 @@
 import React from 'react';
-import {Box} from '@mui/material';
 import logo from '../../logo1.png';
 import Navbar from "../../Router/Navbar";
+import {Box} from '@mui/material';
 
 export default function HomePage() {
 

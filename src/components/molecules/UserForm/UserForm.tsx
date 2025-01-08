@@ -1,9 +1,9 @@
 import React from 'react';
 import {useFormik} from 'formik';
 import {User} from '../../../types/models/User.model';
+import {object, string} from 'yup';
 import {Box, Button, TextField} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
-import {object, string} from 'yup';
 
 interface UserProps {
     user: User;

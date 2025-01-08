@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@mui/icons-material": "^5.10.6",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.1",
     "@mui/joy": "^5.0.0-alpha.47",
-    "@mui/material": "^5.10.7",
+    "@mui/material": "^6.1.1",
     "@mui/styles": "^5.10.7",
+    "@mui/system": "^6.1.1",
     "@mui/x-data-grid": "^5.17.23",
     "@types/jest": "^27.5.2",
     "@types/jsonwebtoken": "^8.5.9",
@@ -45,7 +46,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --max_old_space_size=4096 build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
