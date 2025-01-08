@@ -112,7 +112,7 @@ const Login = () => {
                     )}
                 </Formik>
                 <Typography>
-                    <Link href='#'>Forgot password ?</Link>
+                    <Link href='#'>Forgot Password ?</Link>
                 </Typography>
                 <Typography>
                     {' '}
